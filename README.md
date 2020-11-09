@@ -13,7 +13,7 @@ cd proto
 protoc --go_out=plugins=grpc:. hello.proto
 ```
 
-### 2. 启动服务端
+### 3. 启动服务端
 ```shell
 cd server
 go run .
@@ -23,7 +23,7 @@ go run .
 etcdctl get "hello" --prefix
 ```
 
-### 3. 启动客户端
+### 4. 启动客户端
 ```shell
 cd client
 go run .
